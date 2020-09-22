@@ -28,15 +28,7 @@ class SenderTest {
         String returnedObjToString = dateFormat.format(returnedObj);  
 		Assert.assertTrue(returnedObjToString.equalsIgnoreCase("02/01/2020 13:23:10"));
 	}
-	/**@throws ParseException 
-	 * @throws FileNotFoundException 
-	 * @Test
-	void WhenInvalidStringIsPassedToTheMethodThenException()  {
-		String testerValue = "02/22/2020,13:23:10";
-		Date returnedObj = createDateTimeObject.CreateDateTimeObjectFromData(testerValue);
-		ParseException e;
-		Assert.assertThrows(ParseException.class, createDateTimeObject.CreateDateTimeObjectFromData(testerValue));
-	}**/
+	
 	@Test
 	void WhenExtractionIsDoneThenDataIsRetrieved() throws FileNotFoundException, ParseException {
 		ArrayList<Date> dateList;
